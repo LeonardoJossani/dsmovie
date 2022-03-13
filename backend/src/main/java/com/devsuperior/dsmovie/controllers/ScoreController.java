@@ -15,11 +15,11 @@ import com.devsuperior.dsmovie.services.ScoreService;
 public class ScoreController {
 
 	@Autowired
-	private ScoreService servie;
+	private ScoreService service;
 		
 	@PutMapping
 	public MovieDTO saveScore(@RequestBody ScoreDTO dto) {
-		MovieDTO movieDTO = service-saveScore(dto);
+		MovieDTO movieDTO = service.saveScore(dto);
 		return movieDTO;
 	}
 }
